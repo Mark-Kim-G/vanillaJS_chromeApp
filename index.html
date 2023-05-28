@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
     <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?"/>
-        <button>Log In</button>
+      <input  required maxlength="15" type="text" placeholder="What is your name?"/>
+      <input type="submit" value="Log In"/>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <a href="https://nomadcoders.co">Go to courses</a>
-    <script src="app.js"></script>
-</body>
+    <h2 id="clock">00:00</h2>
+    <h1 id="greetings" class="hidden"></h1>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>  
+  </body>
 </html>
+
+
+
+
+
+
+
+<!-- <h1>Random Number Game</h1>
+<form id="submitForm">
+  <label><strong>Generate a number between 0 and</strong></label>
+  <input
+    required
+    type="number"
+    min="0"
+    id="number"
+    style="display: inline-block;"
+  />
+  <br />
+  <br />
+  <label>Guess the number:</label>
+  <input required type="number" id="guess" style="display: inline-block;" />
+  <button id="playBtn">Play!</button>
+  <p id="result"></p>
+</form>
+
+<script src="src/index.js"></script> -->
